@@ -2,11 +2,11 @@
 const props = defineProps({
   width: {
     type: Number,
-    default: 20,
+    default: 36,
   },
   height: {
     type: Number,
-    default: 20,
+    default: 36,
   },
 })
 </script>
