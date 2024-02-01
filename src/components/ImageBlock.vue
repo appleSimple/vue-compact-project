@@ -16,7 +16,7 @@ const props = defineProps({
   },
   description: {
     type: String,
-    default: '', // 말줄임처리
+    default: '',
   },
 });
 </script>
