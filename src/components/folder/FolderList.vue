@@ -7,18 +7,14 @@ import { FolderType } from '../../types/folder';
 
 const folderList = ref<FolderType[]>(FOLDER_LIST);
 
-const setKeys = () => {
+function setKeys() {
   const _folderList = folderList.value;
   loopTree(_folderList, 0, null);
 
   folderList.value = _folderList;
-};
+}
 
-const loopTree = (
-  array: FolderType[],
-  depth: number,
-  parentId: number | null
-) => {
+function loopTree(array: FolderType[], depth: number, parentId: number | null) {
   const list = array;
 
   for (let i = 0; i < list.length; i += 1) {
@@ -32,7 +28,7 @@ const loopTree = (
       loopTree(list[i].children, _depth, _parentId);
     }
   }
-};
+}
 </script>
 
 <template>

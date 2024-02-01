@@ -11,7 +11,6 @@ const props = defineProps({
   },
 });
 
-// TODO: type 선언하기
 const emits = defineEmits(['setKeys']);
 
 const dragDrop = () => {
