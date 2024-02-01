@@ -5,7 +5,6 @@ import StopWatch from './components/StopWatch.vue';
 import { CARD_LIST } from './data/card-list';
 import FolderList from './components/folder/FolderList.vue';
 
-
 const stopWatch = ref<InstanceType<typeof StopWatch> | null>(null);
 
 function pauseWatch() {
@@ -24,14 +23,24 @@ function reStartWatch() {
       <button type="button" @click="pauseWatch">일시정지</button>
       <button type="button" @click="reStartWatch">다시시작</button>
     </div>
-    <div v-for="(element, index) in CARD_LIST" :key="index">
-      <ImageBlock
-        :img-url="element.imgUrl"
-        :icon="element.icon"
-        :title="element.title"
-        :description="element.description"
-      />
+    <div class="card-wrapper">
+      <template v-for="(element, index) in CARD_LIST" :key="index">
+        <ImageBlock
+          :img-url="element.imgUrl"
+          :icon="element.icon"
+          :title="element.title"
+          :description="element.description"
+        />
+      </template>
     </div>
     <FolderList />
   </div>
 </template>
+
+<style lang="scss" scoped>
+.card-wrapper {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+</style>
