@@ -1,24 +1,24 @@
-import { ListElement } from '../types/listElement';
+import { ListElement } from '../types/list-element';
 import CubeIcon from '../icons/CubeIcon.vue';
 
-export const list: ListElement[] = [
+export const CARD_LIST: ListElement[] = [
   {
     imgUrl:
-      'https://static.scientificamerican.com/sciam/cache/file/32665E6F-8D90-4567-9769D59E11DB7F26_source.jpg?w=1350',
+      'https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/3kT/image/7UhZpvJ2b3elGkblRyzkKfkzQVk.jpg',
     icon: CubeIcon,
     title: '타이틀',
     description: '디스크립션입니다.디스크립션입니다.디스크립션입니다.디스크립션입니다.',
   },
   {
     imgUrl:
-      'https://static.scientificamerican.com/sciam/cache/file/32665E6F-8D90-4567-9769D59E11DB7F26_source.jpg?w=1350',
+      'https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/3kT/image/7UhZpvJ2b3elGkblRyzkKfkzQVk.jpg',
     icon: CubeIcon,
     title: '타이틀',
     description: '디스크립션입니다.디스크립션입니다.디스크립션입니다.디스크립션입니다.',
   },
   {
     imgUrl:
-      'https://static.scientificamerican.com/sciam/cache/file/32665E6F-8D90-4567-9769D59E11DB7F26_source.jpg?w=1350',
+      'https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/3kT/image/7UhZpvJ2b3elGkblRyzkKfkzQVk.jpg',
     icon: CubeIcon,
     title: '타이틀',
     description: '디스크립션입니다.디스크립션입니다.디스크립션입니다.디스크립션입니다.',
