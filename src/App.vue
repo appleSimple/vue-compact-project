@@ -2,7 +2,9 @@
 import { ref } from 'vue';
 import ImageBlock from './components/ImageBlock.vue';
 import StopWatch from './components/StopWatch.vue';
-import { list } from './data/list';
+import { CARD_LIST } from './data/card-list';
+import FolderList from './components/folder/FolderList.vue';
+
 
 const stopWatch = ref<InstanceType<typeof StopWatch> | null>(null);
 
@@ -22,7 +24,7 @@ function reStartWatch() {
       <button type="button" @click="pauseWatch">일시정지</button>
       <button type="button" @click="reStartWatch">다시시작</button>
     </div>
-    <div v-for="(element, index) in list" :key="index">
+    <div v-for="(element, index) in CARD_LIST" :key="index">
       <ImageBlock
         :img-url="element.imgUrl"
         :icon="element.icon"
@@ -30,7 +32,9 @@ function reStartWatch() {
         :description="element.description"
       />
     </div>
+    <FolderList />
   </div>
 </template>
 
 <style lang="scss" scoped></style>
+./data/card-list
