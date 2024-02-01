@@ -35,6 +35,3 @@ function reStartWatch() {
     <FolderList />
   </div>
 </template>
-
-<style lang="scss" scoped></style>
-./data/card-list
