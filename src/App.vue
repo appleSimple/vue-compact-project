@@ -24,7 +24,7 @@ function reStartWatch() {
       <button type="button" @click="reStartWatch">다시시작</button>
     </div>
     <div class="card-wrapper">
-      <template v-for="(element, index) in CARD_LIST" :key="index">
+      <template v-for="(element) in CARD_LIST" :key="index">
         <ImageBlock
           :img-url="element.imgUrl"
           :icon="element.icon"
