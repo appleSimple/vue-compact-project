@@ -1,6 +1,6 @@
 <template>
   <div class="folder-wrapper">
-    <input type="radio" :id="`total-folders-${props.folder.id}`">
+    <input type="radio" :id="`total-folders-${props.folder.id}`" name="folder-list">
     <label
       :for="`total-folders-${props.folder.id}`"
       class="folder-radio"
